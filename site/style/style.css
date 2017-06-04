@@ -1,0 +1,206 @@
+body {
+	background-color: #888;
+}
+
+div.hour-tens div, div.hour-units div, div.minute-tens div, div.minute-units div {
+	background-color: white;
+	width: 200px;
+	height: 30px;
+	margin: 75px 0;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+/* Div centered */
+div.hour-tens, div.hour-units, div.minute-tens, div.minute-units {
+	display: inline-block;
+	width: 200px;
+	height: 195px;
+	margin: 0 auto;
+}
+
+div#delimiter div {
+	background-color: white;
+	width: 50px;
+	height: 35px;
+	margin: 100px auto;
+}
+
+div#delimiter {
+	display: inline-block;
+	width: 50px;
+	height: 195px;
+	margin: 0 auto;
+}
+
+/* Config bars */
+
+	/* The delimiter is composed of two squares. */
+	#delimiter .bar1, #delimiter .bar2 {
+		width: 35px;
+	}
+
+	/* The bar is in the upper-left corner, it's width is at the fourth of the initial. */
+	#zero .bar1, #eight .bar1 {
+		width: 98.5px;
+	}
+	/* The bar is vertical, at the right. */
+	#zero .bar2, #one .bar2, #seven .bar2 {
+		width: 240px;
+		-webkit-transform: translate(65px, 0px) rotate(-90deg);
+		-ms-transform: translate(65px, 0px) rotate(-90deg);
+		-o-transform: translate(65px, 0px) rotate(-90deg);
+		-moz-transform: translate(65px, 0px) rotate(-90deg);
+		transform: translate(65px, 0px) rotate(-90deg);
+	}
+	/* The bar is in the lower-right corner, it's width is at the fourth of the initial. */
+	#zero .bar3, #eight .bar3 {
+		width: 98.5px;
+		-webkit-transform: translate(101.5px, 0px);
+		-ms-transform: translate(101.5px, 0px);
+		-o-transform: translate(101.5px, 0px);
+		-moz-transform: translate(101.5px, 0px);
+		transform: translate(101.5px, 0px);
+	}
+	/* The bar is vertical, at the left. */
+	#zero .bar4, #eight .bar4 {
+		width: 240px;
+		-webkit-transform: translate(-105px, -210px) rotate(90deg);
+		-ms-transform: translate(-105px, -210px) rotate(90deg);
+		-o-transform: translate(-105px, -210px) rotate(90deg);
+		-moz-transform: translate(-105px, -210px) rotate(90deg);
+		transform: translate(-105px, -210px) rotate(90deg);
+	}
+	/* The bar is vertical, at the right. */
+	#zero .bar5, #one .bar5, #seven .bar5, #eight .bar5 {
+		width: 240px;
+		-webkit-transform: translate(65px, -315px) rotate(-90deg);
+		-ms-transform: translate(65px, -315px) rotate(-90deg);
+		-o-transform: translate(65px, -315px) rotate(-90deg);
+		-moz-transform: translate(65px, -315px) rotate(-90deg);
+		transform: translate(65px, -315px) rotate(-90deg);
+	}
+
+	/* The bar is vertical, at the right. */
+	#one .bar1 {
+		width: 240px;
+		-webkit-transform: translate(65px, 105px) rotate(-90deg);
+		-ms-transform: translate(65px, 105px) rotate(-90deg);
+		-o-transform: translate(65px, 105px) rotate(-90deg);
+		-moz-transform: translate(65px, 105px) rotate(-90deg);
+		transform: translate(65px, 105px) rotate(-90deg);
+	}
+	/* The bar is vertical, at the right. */
+	#one .bar3, #seven .bar3, #four .bar3, #nine .bar3 {
+		width: 240px;
+		-webkit-transform: translate(65px, -105px) rotate(90deg);
+		-ms-transform: translate(65px, -105px) rotate(90deg);
+		-o-transform: translate(65px, -105px) rotate(90deg);
+		-moz-transform: translate(65px, -105px) rotate(90deg);
+		transform: translate(65px, -105px) rotate(90deg);
+	}
+	/* The bar is vertical, at the right. */
+	#one .bar4, #seven .bar4 {
+		width: 240px;
+		-webkit-transform: translate(65px, -210px) rotate(90deg);
+		-ms-transform: translate(65px, -210px) rotate(90deg);
+		-o-transform: translate(65px, -210px) rotate(90deg);
+		-moz-transform: translate(65px, -210px) rotate(90deg);
+		transform: translate(65px, -210px) rotate(-90deg);
+	}
+
+	/* The bar is vertical at the lower-left, and it's width is at it's half. */
+	#two .bar4 {
+		width: 129px;
+		-webkit-transform: translate(-49.5px, -154.5px) rotate(90deg);
+		-ms-transform: translate(-49.5px, -154.5px) rotate(90deg);
+		-o-transform: translate(-49.5px, -154.5px) rotate(90deg);
+		-moz-transform: translate(-49.5px, -154.5px) rotate(90deg);
+		transform: translate(-49.5px, -154.5px) rotate(90deg);
+	}
+	/* The bar is vertical at the lower-left, and it's width is at it's half. */
+	#two .bar5 {
+		width: 129px;
+		-webkit-transform: translate(-49.5px, -259.5px) rotate(90deg);
+		-ms-transform: translate(-49.5px, -259.5px) rotate(90deg);
+		-o-transform: translate(-49.5px, -259.5px) rotate(90deg);
+		-moz-transform: translate(-49.5px, -259.5px) rotate(90deg);
+		transform: translate(-49.5px, -259.5px) rotate(90deg);
+	}
+
+	/* The bar is horizontal at the middle. */
+	#three .bar4, #four .bar4, #nine .bar4 {
+		-webkit-transform: translate(0px, -210px) rotate(0deg);
+		-ms-transform: translate(0px, -210px) rotate(0deg);
+		-o-transform: translate(0px, -210px) rotate(0deg);
+		-moz-transform: translate(0px, -210px) rotate(0deg);
+		transform: translate(0px, -210px) rotate(0deg);
+	}
+	/* The bar is horizontal at the middle. */
+	#three .bar5,#four .bar5 {
+		-webkit-transform: translate(0px, -315px) rotate(0deg);
+		-ms-transform: translate(0px, -315px) rotate(0deg);
+		-o-transform: translate(0px, -315px) rotate(0deg);
+		-moz-transform: translate(0px, -315px) rotate(0deg);
+		transform: translate(0px, -315px) rotate(0deg);
+	}
+
+	/* The bar is vertical at the upper-left, and it's width is at it's half. */
+	#four .bar1, #nine .bar1 {
+		width: 129px;
+		-webkit-transform: translate(-49.5px, 49.5px) rotate(90deg);
+		-ms-transform: translate(-49.5px, 49.5px) rotate(90deg);
+		-o-transform: translate(-49.5px, 49.5px) rotate(90deg);
+		-moz-transform: translate(-49.5px, 49.5px) rotate(90deg);
+		transform: translate(-49.5px, 49.5px) rotate(90deg);
+	}
+
+	/* The bar is vertical at the lower-right, and it's width is at it's half. */
+	#five .bar4, #six .bar4 {
+		width: 129px;
+		-webkit-transform: translate(120.5px, -154.5px) rotate(-90deg);
+		-ms-transform: translate(120.5px, -154.5px) rotate(-90deg);
+		-o-transform: translate(120.5px, -154.5px) rotate(-90deg);
+		-moz-transform: translate(120.5px, -154.5px) rotate(-90deg);
+		transform: translate(120.5px, -154.5px) rotate(-90deg);
+	}
+	/* The bar is vertical at the lower-right, and it's width is at it's half. */
+	#five .bar5 {
+		width: 129px;
+		-webkit-transform: translate(120.5px, -259.5px) rotate(-90deg);
+		-ms-transform: translate(120.5px, -259.5px) rotate(-90deg);
+		-o-transform: translate(120.5px, -259.5px) rotate(-90deg);
+		-moz-transform: translate(120.5px, -259.5px) rotate(-90deg);
+		transform: translate(120.5px, -259.5px) rotate(-90deg);
+	}
+
+	/* The bar is vertical at the lower-right, and it's width is at it's half. */
+	#six .bar3 {
+		width: 129px;
+		-webkit-transform: translate(132.5px, -49.5px) rotate(90deg);
+		-ms-transform: translate(132.5px, -49.5px) rotate(90deg);
+		-o-transform: translate(132.5px, -49.5px) rotate(90deg);
+		-moz-transform: translate(132.5px, -49.5px) rotate(90deg);
+		transform: translate(120.5px, -49.5px) rotate(90deg);
+	}
+	/* The bar is vertical, at the left. */
+	#six .bar5 {
+		width: 240px;
+		-webkit-transform: translate(-105px, -315px) rotate(-90deg);
+		-ms-transform: translate(-105px, -315px) rotate(-90deg);
+		-o-transform: translate(-105px, -315px) rotate(-90deg);
+		-moz-transform: translate(-105px, -315px) rotate(-90deg);
+		transform: translate(-105px, -315px) rotate(-90deg);
+	}
+
+	/* The bar is horizontal at the bottom. */
+	#nine .bar5 {
+		-webkit-transform: translate(0px, -210px);
+		-ms-transform: translate(0px, -210px);
+		-o-transform: translate(0px, -210px);
+		-moz-transform: translate(0px, -210px);
+		transform: translate(0px, -210px);
+	}
