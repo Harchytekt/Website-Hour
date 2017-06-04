@@ -1,9 +1,11 @@
 $(document).ready(function() {
 	// Initialization of the variables.
-	var d    = new Date();
-	var h    = addZero(d.getHours()).toString();
-	var m    = addZero(d.getMinutes()).toString();
+	var d           = new Date();
+	var h           = addZero(d.getHours()).toString();
+	var m           = addZero(d.getMinutes()).toString();
+	var s           = addZero(d.getSeconds());
 	var currentTime = h + m;
+	var timeToWait  = (60 - s) * 1000;
 	var current;
 	displayTime();
 
@@ -63,9 +65,9 @@ $(document).ready(function() {
 		}
 	}
 
-	// Refreshes th page every 15 seconds.
+	// Refreshes the page when the new minute arrives.
 	setTimeout(function() {
 		location.reload();
-	}, 15000);
+	}, timeToWait);
 
 });
