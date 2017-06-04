@@ -75,7 +75,7 @@ div#delimiter {
 		transform: translate(-105px, -210px) rotate(90deg);
 	}
 	/* The bar is vertical, at the right. */
-	#zero .bar5, #one .bar5, #seven .bar5, #eight .bar5 {
+	#zero .bar5, #one .bar5, #seven .bar5, #eight .bar5, #nine .bar5 {
 		width: 240px;
 		-webkit-transform: translate(65px, -315px) rotate(-90deg);
 		-ms-transform: translate(65px, -315px) rotate(-90deg);
@@ -94,7 +94,7 @@ div#delimiter {
 		transform: translate(65px, 105px) rotate(-90deg);
 	}
 	/* The bar is vertical, at the right. */
-	#one .bar3, #seven .bar3, #four .bar3, #nine .bar3 {
+	#one .bar3, #seven .bar3, #four .bar3 {
 		width: 240px;
 		-webkit-transform: translate(65px, -105px) rotate(90deg);
 		-ms-transform: translate(65px, -105px) rotate(90deg);
@@ -194,13 +194,4 @@ div#delimiter {
 		-o-transform: translate(-105px, -315px) rotate(-90deg);
 		-moz-transform: translate(-105px, -315px) rotate(-90deg);
 		transform: translate(-105px, -315px) rotate(-90deg);
-	}
-
-	/* The bar is horizontal at the bottom. */
-	#nine .bar5 {
-		-webkit-transform: translate(0px, -210px);
-		-ms-transform: translate(0px, -210px);
-		-o-transform: translate(0px, -210px);
-		-moz-transform: translate(0px, -210px);
-		transform: translate(0px, -210px);
 	}
