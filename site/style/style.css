@@ -168,7 +168,7 @@ div#delimiter {
 		transform: translate(120.5px, -154.5px) rotate(-90deg);
 	}
 	/* The bar is vertical at the lower-right, and it's width is at it's half. */
-	#five .bar5 {
+	#five .bar5, #six .bar5 {
 		width: 129px;
 		-webkit-transform: translate(120.5px, -259.5px) rotate(-90deg);
 		-ms-transform: translate(120.5px, -259.5px) rotate(-90deg);
@@ -177,21 +177,12 @@ div#delimiter {
 		transform: translate(120.5px, -259.5px) rotate(-90deg);
 	}
 
-	/* The bar is vertical at the lower-right, and it's width is at it's half. */
+	/* The bar is vertical at the left. */
 	#six .bar3 {
-		width: 129px;
-		-webkit-transform: translate(132.5px, -49.5px) rotate(90deg);
-		-ms-transform: translate(132.5px, -49.5px) rotate(90deg);
-		-o-transform: translate(132.5px, -49.5px) rotate(90deg);
-		-moz-transform: translate(132.5px, -49.5px) rotate(90deg);
-		transform: translate(120.5px, -49.5px) rotate(90deg);
-	}
-	/* The bar is vertical, at the left. */
-	#six .bar5 {
 		width: 240px;
-		-webkit-transform: translate(-105px, -315px) rotate(-90deg);
-		-ms-transform: translate(-105px, -315px) rotate(-90deg);
-		-o-transform: translate(-105px, -315px) rotate(-90deg);
-		-moz-transform: translate(-105px, -315px) rotate(-90deg);
-		transform: translate(-105px, -315px) rotate(-90deg);
+		-webkit-transform: translate(-105px, -105px) rotate(90deg);
+		-ms-transform: translate(-105px, -105px) rotate(90deg);
+		-o-transform: translate(-105px, -105px) rotate(90deg);
+		-moz-transform: translate(-105px, -105px) rotate(90deg);
+		transform: translate(-105px, -105px) rotate(90deg);
 	}
