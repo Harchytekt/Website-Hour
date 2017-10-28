@@ -7,5 +7,5 @@ These are the digits:
 
 ---
 
-⚠️ This website is only a JavaScript test and is far from perfect. ⚠️
+⚠️ This website is only a JavaScript test and is far from perfect. ⚠️  
 For example, it is not suitable for mobile phones...
